@@ -1,11 +1,22 @@
+import Link from "next/link";
+
 export default function Home() {
-  return <main className="bg-slate-400 h-screen flex items-center justify-center p-2 sm:bg-red-100  md:bg-green-100 lg:bg-orange-100 xl:bg-blue-100 2xl:bg-gray-100">
+  return <div>
+    
+    <div>
+      <span>🌝</span>
+      <h1>달달 무슨 달 </h1>
+      <h2>쟁반같이 둥근 달 어디어디 떴나 동산 위에 떴지</h2>
+    </div>
 
-   <div className="group flex flex-col">
-    <input type="text" className="bg-gray-100 w-full" placeholder="Email"/>
-    <span className=" group-focus-within:block hidden">Make sure is a valid email</span>
-    <button className=" m-apple rounded-banana">OK</button>
+  
 
-   </div>
-  </main>;
+    <div>
+      <Link href="/create-account">시작하기</Link>
+      <div>
+        <span>계정이 있나요?</span>
+        <Link href="/login">로그인</Link>
+      </div>
+    </div>
+  </div>;
 }

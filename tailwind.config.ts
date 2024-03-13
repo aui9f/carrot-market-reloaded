@@ -8,12 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      margin: {
-        apple: '24px'
-      },
-      borderRadius: {
-        banana: '16px'
-      }
     }
   },
   plugins: [],
