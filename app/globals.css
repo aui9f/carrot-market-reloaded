@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.btn{
+  @apply bg-gray-100 w-full
+}
+
+@layer base {
+  a{
+    @apply text-blue-500
+  }
+}
+
+
+@layer utilities{
+  .sub-title-txt{
+    /* font-size: 48px; 
+    이 작업을 수행하는 것은 쓸모없음
+     -- class name 확장을 configuration파일에서 할수 있기 때문에 아래와 같이 사용 */
+    @apply text-3xl font-semibold
+  }
+}
+
+/* 컴포넌트는 많은 class 를 감쌀때 사용 */
+@layer components{
+  .btn{
+    @apply
+    bg-gray-100 w-full;
+  }
+}
