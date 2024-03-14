@@ -1,14 +1,14 @@
 interface IFormInputProps{
-  type: string
-  placeholder: string
-  isRequired: boolean
-  errors: string[]
+  type: 'submit' | 'reset' | "button" | undefined
+  label: string
+  
+  errors?: string[]
 }
-export default function FormButton({type, placeholder, isRequired, errors}: IFormInputProps){
+export default function FormButton({type,label}: IFormInputProps){
   return (
     <div>
-      <input type={type} placeholder={placeholder} required={isRequired}/>
-      {errors?.map((err, index)=><span key={index}>{err}</span>)}
+      <button type={type} >{label}</button>
+      {/* {errors?.map((err, index)=><span key={index}>{err}</span>)} */}
     </div>
   )
 }

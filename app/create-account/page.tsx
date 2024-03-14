@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Input } from "postcss";
 // import FormInput from "@/app/components/form-input"
 
 export default function CreateAccount(){
@@ -9,6 +10,7 @@ export default function CreateAccount(){
   </div>
 
   <form>
+    
     {/* <div>
       <input type="text" />
       <span>ERROR</span>
